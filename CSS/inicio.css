@@ -1,0 +1,126 @@
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('path/to/Gotham-Book.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('path/to/Gotham-Medium.ttf') format('truetype');
+}
+body {
+    font-family: 'Gotham Book', Arial, sans-serif;
+    color: #5B6670;
+}
+.navbar {
+    margin-bottom: 20px;
+}
+.left-section, .right-section {
+    height: 100vh;
+}
+.left-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+.right-section {
+    padding: 20px;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.financial-data {
+    margin-top: 20px;
+}
+.customer-photo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.customer-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+/* Custom styles for the chatbot interface */
+.chatbot-interface {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.chatbot-input {
+    margin-top: 20px;
+}
+/* Input field styles */
+input[type="text"], input[type="password"], select {
+    background-color: #F6F6F6;
+    font-family: 'Gotham Book';
+    font-size: 12px;
+    color: #5B6670;
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+input[type="text"]:disabled, input[type="password"]:disabled, select:disabled {
+    color: #C1C5C8;
+}
+.error-message {
+    font-family: 'Gotham Book';
+    font-size: 12px;
+    color: #EB0029;
+}
+.error-message .icon {
+    color: #323E48;
+}
+/* Dropdown styles */
+select {
+    font-family: 'Gotham Book';
+    font-size: 14px;
+    color: #5B6670;
+}
+select .icon {
+    color: #323E48;
+}
+/* Button styles */
+.btn-primary {
+    font-family: 'Gotham Medium';
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #EB0029;
+    border: none;
+    padding: 4px 30px;
+    height: 45px;
+}
+.btn-primary:hover {
+    background-color: #DB0026;
+}
+.btn-secondary {
+    font-family: 'Gotham Medium';
+    font-size: 15px;
+    color: #323E48;
+    background-color: transparent;
+    border: 1px solid #323E48;
+    padding: 4px 30px;
+    height: 45px;
+}
+.btn-secondary:hover {
+    background-color: #DB0026;
+    color: #FFFFFF;
+}
+.btn-secondary:disabled {
+    color: #A2A9AD;
+    background-color: #CFD2D3;
+}
+.btn-tertiary {
+    font-family: 'Gotham Medium';
+    font-size: 15px;
+    color: #323E48;
+    background-color: transparent;
+    border: none;
+}
+.btn-tertiary:hover {
+    color: #DB0026;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/inicio.css">
+    <title>Banorte</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Banorte</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(actual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sección izquierda: Interfaz de chatbot -->
+            <div class="col-md-6 left-section">
+                <h2>Chatbot de Atención al Cliente</h2>
+                
+                <div class="chatbot-interface">
+                    <!-- Interfaz de chatbot para interactuar con un AI para servicio al cliente y soporte -->
+                    <div id="chatbot-messages">
+                        <!-- Mensajes del chatbot -->
+                    </div>
+                    <div class="chatbot-input">
+                        <div class="input-group">
+                            <input type="text" id="chatbot-input" class="form-control" placeholder="Escribe tu pregunta...">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" onclick="sendMessage()">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sección derecha: Datos financieros del cliente -->
+            <div class="col-md-6 right-section">
+                <h2>Datos Financieros del Cliente</h2>
+                <div class="financial-data">
+                    <h4>Saldo de Cuentas</h4>
+                    <p id="cuenta-corriente">Cuenta Corriente: $0</p>
+                    <p id="cuenta-ahorros">Cuenta de Ahorros: $0</p>
+                    <h4>Transacciones Recientes</h4>
+                    <ul id="transacciones-recientes">
+                        <!-- Transacciones recientes -->
+                    </ul>
+                    <h4>Insights Financieros</h4>
+                    <p id="gastos-mensuales">Gastos Mensuales: $0</p>
+                    <p id="ingresos-mensuales">Ingresos Mensuales: $0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer">
+        <p>&copy; 2023 Banorte</p>
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="JS/inicio.js"></script>
+</body>
+</html>
