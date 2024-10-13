@@ -33,33 +33,33 @@
         <div class="row">
             <!-- Sección izquierda: Interfaz de chatbot -->
             <div class="col-md-6 left-section">
-                <h2>Chatbot de Atención al Cliente</h2>
+                <h2 style="text-align: center;">Chatbot de Atención al Cliente</h2>
                 
                 <div class="chatbot-interface">
                     <!-- Interfaz de chatbot para interactuar con un AI para servicio al cliente y soporte -->
-                    <div id="chatbot-messages">
-                        <!-- Mensajes del chatbot -->
-                    </div>
-                    <div class="chatbot-input">
-                        <div class="input-group">
-                            <input type="text" id="chatbot-input" class="form-control" placeholder="Escribe tu pregunta...">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" onclick="sendMessage()">Enviar</button>
-                            </div>
+                    <div id="chatbot-messages" style="height: 400px; overflow-y: auto;"></div>
+                    <!-- Mensajes del chatbot -->
+                </div>
+                <div class="chatbot-input">
+                    <div class="input-group">
+                        <input type="text" id="chatbot-input" class="form-control" placeholder="Escribe tu pregunta..." style="height: 100%;">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" onclick="sendMessage()" style="height: 40px;">Enviar</button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Sección derecha: Datos financieros del cliente -->
             <div class="col-md-6 right-section">
-                <h2>Datos Financieros del Cliente</h2>
+                <br><br>
+                <center><h2>Datos Financieros del Cliente</h2></center>
                 <div class="financial-data">
                     <h4>Saldo de Cuentas</h4>
                     <p id="cuenta-corriente">Cuenta Corriente: $0</p>
                     <p id="cuenta-ahorros">Cuenta de Ahorros: $0</p>
                     <h4>Transacciones Recientes</h4>
                     <ul id="transacciones-recientes">
-                        <!-- Transacciones recientes -->
+                        <!-- Transacciones recientes--> 
                     </ul>
                     <h4>Insights Financieros</h4>
                     <p id="gastos-mensuales">Gastos Mensuales: $0</p>
@@ -71,7 +71,7 @@
 
     <!-- Pie de página -->
     <div class="footer">
-        <p>&copy; 2023 Banorte</p>
+        <p>&copy; 2024 Banorte</p>
     </div>
 
     <script src="JS/bootstrap.bundle.min.js"></script>

@@ -28,7 +28,6 @@ body {
     text-align: center;
     padding: 10px;
     background-color: #f8f9fa;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
@@ -96,6 +95,7 @@ select .icon {
 }
 .btn-primary:hover {
     background-color: #DB0026;
+   
 }
 .btn-secondary {
     font-family: 'Gotham Medium';
@@ -123,4 +123,8 @@ select .icon {
 }
 .btn-tertiary:hover {
     color: #DB0026;
+}
+.financial-data{
+    margin-left: 40px;
+    margin-top: 60px;
 }
